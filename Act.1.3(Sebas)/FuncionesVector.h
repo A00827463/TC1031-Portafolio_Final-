@@ -87,8 +87,6 @@ int selecDirecta(vector <Dato> & v){
             aux = v[indiceMayor];
             v[indiceMayor] = v[t-1-i];
             v[t-i-1] = aux;
-            
-            
         }
     }
     return  cant;
