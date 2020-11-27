@@ -64,7 +64,17 @@ int main(){
     }
 
     // printAll(nodos_ips);
-    printSpesific(nodos_ips);
+    bool continuar = true;
+    while(continuar){
+        printSpesific(nodos_ips);
+        cout << "Deseas hacer otra consulta?: si / no"<< endl;
+        string respuesta;
+        cin >> respuesta;
+        if (respuesta == "si"){
+            continuar = true;
+        }
+        else continuar = false;
+    }
     bitacora.close();
 
     return 0;
